@@ -50,7 +50,7 @@ def run():
         wheather_list=['Clouds','Mist','Fog','Rain','Snow','Thunderstorm','Haze','Drizzle','Clear','']
         weather_main = st.selectbox('Select the weather condition',wheather_list)
    
-        Rush Hour = st.sidebar.slider(label = 'Rush Hour', min_value = 0.00,
+        Rush_Hour = st.sidebar.slider(label = 'Rush Hour', min_value = 0.00,
                           max_value = 6.00 ,
                           value = 0.00,
                           step = 1.0)
@@ -62,7 +62,7 @@ def run():
 
         features = {'Holiday': holiday,'Temperature': temp, 'Rainy Hour': rain_1h,
             'Snowy Hour': snow_1h	, 'Cloud Percentage': clouds_all,
-            'Weather Condition': weather_main, 'Rush Hour': Rush Hour,
+            'Weather Condition': weather_main, 'Rush Hour': Rush_Hour,
             'Traffic Volume': traffic_volume
             }
         input_df = pd.DataFrame([features])
